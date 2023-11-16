@@ -70,6 +70,6 @@ def one_hot_decode_list(peptides_encoded):
     return peptides_decoded
 
 
-def softmax_beta(x, beta=0.5):
+def softmax_beta(x, beta=1.5):
     x = x * beta
     return K.softmax(x)
